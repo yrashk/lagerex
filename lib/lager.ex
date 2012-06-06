@@ -1,7 +1,7 @@
 defmodule Lager do
   levels = [:debug, :info, :notice, :warning, :error, :critical, :alert, :emergency]
 
-  lc level in levels do
+  lc level inlist levels do
     contents =
     quote do
       def unquote(level).(msg) do
