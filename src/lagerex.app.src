@@ -1,0 +1,12 @@
+{application, lagerex,
+ [
+  {description, "Lager wrapper for Elixir"},
+  {vsn, git},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib,
+                  lager
+                 ]},
+  {env, []}
+ ]}.
