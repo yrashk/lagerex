@@ -5,7 +5,7 @@ defmodule Lager do
     contents =
     quote do
       def unquote(level).(msg) do
-        log(unquote(level), msg)
+        log(unquote(level), to_char_list(msg))
       end
       def unquote(level).(format, args)  do
         log(unquote(level), format, args)
