@@ -1,1 +1,2 @@
-[ "lager": {:git,"https://github.com/basho/lager","e749242087706e480ecb530d99c5615e7e0dc7d6",[]} ]
+[ "goldrush": {:git, "git://github.com/DeadZen/goldrush.git", "879c69874a555b2c13498aa4a3da6f6bbbb6a031", [{:tag, "879c69874a"}]},
+  "lager": {:git, "git://github.com/basho/lager.git", "2965c23f46301afeb7d62f6fbac99b3ab367f6b2", []} ]

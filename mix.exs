@@ -11,7 +11,7 @@ defmodule Lagerex.MixFile do
   def application, do: []
 
   defp deps do
-    [{:lager, %r(.*), git: "https://github.com/basho/lager"}]
+    [{:lager, github: "basho/lager"}]
   end
 
 end
