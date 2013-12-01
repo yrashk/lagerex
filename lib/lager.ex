@@ -16,6 +16,6 @@ defmodule Lager do
 
   def log(level, msg), do: :lager.log(level, self, msg)
   def log(level, format, args) when is_list(format), do: :lager.log(level, self, format, args)
-  def log(level, format, args) when is_binary(format), do: log(level, binary_to_list(format), args)
+  def log(level, format, args) when is_binary(format), do: log(level, String.to_char_list!(format), args)
 
 end
