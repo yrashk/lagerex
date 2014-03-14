@@ -11,7 +11,7 @@ defmodule Lager do
         log(unquote(level), format, args)
       end
     end
-    Module.eval_quoted __MODULE__, contents, file: __FILE__, line: __ENV__.line
+    Module.eval_quoted __MODULE__, contents, file: __ENV__.file, line: __ENV__.line
   end
 
   def log(level, msg), do: :lager.log(level, self, msg)
